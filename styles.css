@@ -1,0 +1,32 @@
+header{
+   font-size: large;
+   font-family: verdana;
+   display:flex;
+   justify-content: space-around;
+   background-color: blue;
+}
+
+a{
+   color:white;
+}
+
+h1{
+   left:50px;
+   font-family: verdana;
+}
+.bold{
+   font-weight: bold;
+}
+
+section{
+
+}
+
+.input_form{
+
+   text-align: center;
+   margin:auto;
+   border: solid 3px darkgray;
+   height:100px;
+   width:40%;
+}
