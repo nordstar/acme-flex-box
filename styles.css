@@ -19,14 +19,103 @@ h1{
 }
 
 section{
-
+   font-size: medium;
+   font-family: verdana;
 }
 
 .input_form{
-
+   display:flex;
+   flex-direction: column;
    text-align: center;
+   align-items: flex-start;
    margin:auto;
+   padding:25px;
    border: solid 3px darkgray;
-   height:100px;
+   height:auto;
    width:40%;
+}
+
+.input_form>div{
+   padding:.25em;
+}
+
+/* doesn't work yet! */
+#div_button{
+   display: inline-block; 
+}
+
+#save_button{
+   color:white;
+   background-color: blue;
+
+}
+
+#section_usercards{
+   display:flex;
+   flex-wrap: wrap;
+
+}
+
+.div_usercards{
+   text-align: center;
+   border: solid 3px darkgray;
+   border-radius: 5px;
+   margin:2rem;
+   flex-grow: 1;
+}
+
+.div_usercards>p{
+margin:3em;
+
+}
+
+
+@media (max-width: 600px) {
+
+   header{
+      font-size: large;
+      font-family: verdana;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: blue;
+   }
+      
+   h1{
+      left:50px;
+      font-family: verdana;
+   }
+
+   .input_form{
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: flex-start;
+      margin:auto;
+      padding:25px;
+      border: solid 3px darkgray;
+      height:auto;
+      width:40%;
+   }
+
+   #section_usercards{
+      display:flex;
+      flex-wrap: wrap;
+   }
+
+   .div_usercards{
+      text-align: center;
+      border: solid 3px darkgray;
+      border-radius: 5px;
+      margin:2rem;
+      flex-grow: 1;
+   }
+
+   #div_button{
+      width:100%;
+   }
+
+   button{
+      width:100%;
+   }
 }
